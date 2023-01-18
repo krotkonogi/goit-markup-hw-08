@@ -1,0 +1,10 @@
+.team {
+  padding: 94px 0;
+  & .leaflet:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team__leaflets {
+  display: flex;
+}

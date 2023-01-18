@@ -1,0 +1,15 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.newsletter__title {
+  color: var(--main-background-color);
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}

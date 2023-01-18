@@ -1,0 +1,44 @@
+.about {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+}
+
+.about__cards {
+  display: flex;
+  letter-spacing: 0.03em;
+  & li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.about__picture {
+  margin: 0;
+  width: inherit;
+}
+
+.about__icon {
+  background-color: var(--box-bg-color);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+}
+
+.about__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  width: 270px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.about__caption {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--text-color-alt);
+  letter-spacing: 0.03em;
+  width: 270px;
+  margin-bottom: 0px;
+}

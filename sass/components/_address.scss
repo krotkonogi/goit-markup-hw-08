@@ -1,0 +1,24 @@
+.address {
+  text-decoration: none;
+  color: var(--text-color-alt);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.address__icon {
+  fill: var(--text-color-alt);
+  padding-top: 0px;
+  align-self: center;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.address--header {
+  display: flex;
+}
+
+.address--footer {
+  color: rgba(255, 255, 255, 0.6);
+}
