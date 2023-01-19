@@ -1,49 +1,57 @@
 .subscribe {
   display: flex;
   gap: 12px;
-}
 
-.subscribe__input {
-  box-sizing: border-box;
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background: var(--footer-bg-color);
-  padding: 14px 16px;
-  outline: none;
-  color: var(--top-bg-color);
-  line-height: 1.25;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  &:focus {
-    border-color: var(--highlight-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: border-color;
+  &__input {
+    box-sizing: border-box;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: var(--footer-bg-color);
+    padding: 14px 16px;
+    outline: none;
+    color: var(--top-bg-color);
+    line-height: 1.25;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+
+    &:focus {
+      border-color: var(--highlight-color);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: border-color;
+    }
+
+    &:hover {
+      border-color: var(--highlight-color);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: border-color;
+    }
   }
-}
 
-.subscribe__button {
-  background: var(--highlight-color);
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-  min-width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--top-bg-color);
-  border: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
+  &__button {
+    background: var(--highlight-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--top-bg-color);
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
 
-.subscribe__icon {
-  margin-left: 24px;
-  fill: var(--highlight-color);
+  &__icon {
+    margin-left: 24px;
+    fill: var(--highlight-color);
+  }
 }

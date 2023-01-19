@@ -17,75 +17,75 @@
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: var(--top-bg-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  position: absolute;
-  right: 8px;
-  top: 8px;
-}
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--top-bg-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
 
-.modal__style {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 40px;
-}
+  &__style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
 
-.modal__title {
-  font-weight: 700;
-  display: block;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-bottom: 12px;
-  padding-top: 40px;
-  margin-top: 0px;
-}
+  &__title {
+    font-weight: 700;
+    display: block;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 12px;
+    padding-top: 40px;
+    margin-top: 0px;
+  }
 
-.modal__content {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--text-color-alt);
-  width: 448px;
-  margin-bottom: 10px;
-}
+  &__content {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--text-color-alt);
+    width: 448px;
+    margin-bottom: 10px;
+  }
 
-.modal__statute {
-  font-size: 14px;
-  color: var(--text-color-alt);
-  letter-spacing: 0.03em;
-}
+  &__statute {
+    font-size: 14px;
+    color: var(--text-color-alt);
+    letter-spacing: 0.03em;
+  }
 
-.modal__href {
-  color: var(--highlight-color);
-}
+  &__href {
+    color: var(--highlight-color);
+  }
 
-.modal__submit {
-  background: var(--highlight-color);
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--main-background-color);
-  border: 0px;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  cursor: pointer;
+  &__submit {
+    background: var(--highlight-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--main-background-color);
+    border: 0px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+  }
 }

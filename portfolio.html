@@ -30,7 +30,11 @@
               <a class="navigation__link" href="./index.html">Agencja</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link is-active--portfolio" href="./portfolio.html">Portfolio</a>
+              <a
+                class="navigation__link navigation__link--active is-active--page"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="navigation__item"><a class="navigation__link" href="#">Kontakt</a></li>
           </ul>
@@ -57,7 +61,7 @@
     </div>
     <main>
       <section class="portfolio container">
-        <div class="filter__grid">
+        <div class="filter">
           <button class="filter__button" type="button">Wszystkie</button>
           <button class="filter__button" type="button">Strony</button>
           <button class="filter__button" type="button">Aplikacje</button>
@@ -328,16 +332,16 @@
         </div>
         <div class="newsletter">
           <p class="newsletter__title">ZAPISZ SIE DO NEWSLETTERA</p>
-          <div class="subscribe">
-            <label>
-              <input type="email" placeholder="E-mail" class="subscribe__input" />
-            </label>
-            <button type="submit" class="subscribe__button">
-              Zapisz sie
-              <svg width="24px" height="24px" class="subscribe__icon">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+          <div>
+            <form class="subscribe">
+              <input type="email" placeholder="E-mail" class="subscribe__input" required />
+              <button type="submit" class="subscribe__button">
+                Zapisz sie
+                <svg width="24px" height="24px" class="subscribe__icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>

@@ -6,16 +6,16 @@
   color: var(--highlight-color);
   text-decoration: none;
   cursor: pointer;
-}
 
-.logo--header {
-  height: 31px;
-  margin-top: 24px;
-  margin-right: 0px;
-  color: #000000;
-}
+  &--header {
+    height: 31px;
+    margin-top: 24px;
+    margin-right: 0px;
+    color: #000000;
+  }
 
-.logo--footer {
-  color: var(--top-bg-color);
-  margin-bottom: 20px;
+  &--footer {
+    color: var(--top-bg-color);
+    margin-bottom: 20px;
+  }
 }

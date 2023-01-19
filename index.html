@@ -27,7 +27,11 @@
         <nav>
           <ul class="navigation">
             <li class="navigation__item">
-              <a class="navigation__link is-active--agencja" href="./index.html">Agencja</a>
+              <a
+                class="navigation__link navigation__link--active is-active--page"
+                href="./index.html"
+                >Agencja</a
+              >
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="./portfolio.html">Portfolio</a>
@@ -144,10 +148,10 @@
           </li>
         </ul>
       </section>
-      <section class="container skills">
+      <section class="container">
         <h2 class="section-title">Czym się zajmujemy</h2>
-        <ul class="skills__list">
-          <li class="skills__item">
+        <ul class="skills">
+          <li tabindex="0" class="skills__item">
             <div class="skills__background">
               <a class="skills__info">APLIKACJE KOMPUTEROWE</a>
             </div>
@@ -158,13 +162,13 @@
               height="294"
             />
           </li>
-          <li class="skills__item">
+          <li tabindex="0" class="skills__item">
             <div class="skills__background">
               <a class="skills__info">APLIKACJE MOBILNE</a>
             </div>
             <img src="./images/image(1).jpg" alt="Mobile applications" width="370" height="294" />
           </li>
-          <li class="skills__item">
+          <li tabindex="0" class="skills__item">
             <div class="skills__background">
               <a class="skills__info">APLIKACJE MOBILNE</a>
             </div>
@@ -422,32 +426,32 @@
       <section class="clients">
         <h2 class="section-title">Nasi klienci</h2>
         <ul class="clients__cards">
-          <li class="clients__item">
+          <li tabindex="0" class="clients__item">
             <svg class="clients__icon" width="170" height="92">
               <use href="./images/icons.svg#icon-client1"></use>
             </svg>
           </li>
-          <li class="clients__item">
+          <li tabindex="0" class="clients__item">
             <svg class="clients__icon" width="170" height="92">
               <use href="./images/icons.svg#icon-client2"></use>
             </svg>
           </li>
-          <li class="clients__item">
+          <li tabindex="0" class="clients__item">
             <svg class="clients__icon" width="170" height="92">
               <use href="./images/icons.svg#icon-client3"></use>
             </svg>
           </li>
-          <li class="clients__item">
+          <li tabindex="0" class="clients__item">
             <svg class="clients__icon" width="170" height="92">
               <use href="./images/icons.svg#icon-client4"></use>
             </svg>
           </li>
-          <li class="clients__item">
+          <li tabindex="0" class="clients__item">
             <svg class="clients__icon" width="170" height="92">
               <use href="./images/icons.svg#icon-client5"></use>
             </svg>
           </li>
-          <li class="clients__item">
+          <li tabindex="0" class="clients__item">
             <svg class="clients__icon" width="170" height="92">
               <use href="./images/icons.svg#icon-client6"></use>
             </svg>
@@ -526,16 +530,16 @@
         </div>
         <div class="newsletter">
           <p class="newsletter__title">ZAPISZ SIE DO NEWSLETTERA</p>
-          <div class="subscribe">
-            <label>
-              <input type="email" placeholder="E-mail" class="subscribe__input" />
-            </label>
-            <button type="submit" class="subscribe__button">
-              Zapisz sie
-              <svg width="24px" height="24px" class="subscribe__icon">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+          <div>
+            <form class="subscribe">
+              <input type="email" placeholder="E-mail" class="subscribe__input" required />
+              <button type="submit" class="subscribe__button">
+                Zapisz sie
+                <svg width="24px" height="24px" class="subscribe__icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -552,7 +556,7 @@
           <label class="modal__content">
             Imię
             <span class="input">
-              <input class="input__content" type="text" name="name" autofocus />
+              <input class="input__content" type="text" name="name" autofocus required />
               <svg class="input__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
@@ -561,7 +565,7 @@
           <label class="modal__content">
             Telefon
             <span class="input">
-              <input class="input__content" type="text" name="name" autofocus />
+              <input class="input__content" type="text" name="name" required />
               <svg class="input__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
@@ -570,7 +574,7 @@
           <label class="modal__content">
             Email
             <span class="input">
-              <input class="input__content" type="text" name="name" autofocus />
+              <input class="input__content" type="text" name="name" required />
               <svg class="input__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -583,11 +587,12 @@
                 name="comment"
                 placeholder="Wprowadz tekst"
                 class="comment__textarea"
+                requireds
               ></textarea>
             </span>
           </label>
           <label class="checkbox">
-            <input type="checkbox" name="modal-agree" class="checkbox__input" hidden="" />
+            <input type="checkbox" name="modal-agree" class="checkbox__input" required hidden="" />
             <span class="checkbox__span">
               <svg class="checkbox__icon" width="11" height="8">
                 <use href="./images/icons.svg#icon-check"></use>

@@ -1,12 +1,21 @@
 .contact {
   display: flex;
-}
 
-.contact__item {
-  display: flex;
-  align-items: center;
-}
+  &__item {
+    display: flex;
+    align-items: center;
 
-.contact--space {
-  margin-right: 46px;
+    &:hover svg,
+    &:hover a {
+      color: var(--highlight-color);
+      fill: var(--highlight-color);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: fill color;
+    }
+  }
+
+  &--space {
+    margin-right: 46px;
+  }
 }

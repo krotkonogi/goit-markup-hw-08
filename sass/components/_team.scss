@@ -1,9 +1,11 @@
 .team {
+  padding-bottom: 94px;
+
+  &__leaflets {
+    display: flex;
+  }
+
   & .leaflet:not(:last-child) {
     margin-right: 30px;
   }
-}
-
-.team__leaflets {
-  display: flex;
 }

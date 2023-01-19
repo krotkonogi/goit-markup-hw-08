@@ -1,6 +1,7 @@
 .clients {
   text-align: center;
   padding-bottom: 94px;
+
   & svg:hover {
     outline: 1px solid var(--highlight-color);
     fill: var(--highlight-color);
@@ -9,6 +10,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: outline;
   }
+
   & svg:focus {
     outline: 1px solid var(--highlight-color);
     fill: var(--highlight-color);
@@ -17,22 +19,22 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: outline;
   }
-}
 
-.clients__icon {
-  fill: #afb1b8;
-  border-radius: 4px;
-  outline: 1px solid #afb1b8;
-}
+  &__icon {
+    fill: #afb1b8;
+    border-radius: 4px;
+    outline: 1px solid #afb1b8;
+  }
 
-.clients__cards {
-  display: flex;
-  padding-left: 0;
-  justify-content: center;
-}
+  &__cards {
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+  }
 
-.clients__item {
-  &:not(:last-child) {
-    margin-right: 30px;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
