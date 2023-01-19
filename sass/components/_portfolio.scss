@@ -1,5 +1,5 @@
 .portfolio {
-  padding: 94px 0;
+  padding: 100px 0;
 }
 
 .portfolio--overlay {
@@ -54,13 +54,13 @@
 
 .portfolio__card {
   background: var(--top-bg-color);
-  border: 1px solid #eeeeee;
   margin: 0;
   &:hover .portfolio__card--overlay {
     transform: translate(0%, -100%);
     background: var(--highlight-color);
-    height: 101%;
-    width: 101%;
+    opacity: 90%;
+    height: 100%;
+    width: 100%;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: height width transform background;
@@ -70,6 +70,9 @@
 .portfolio__description {
   margin: 0;
   padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .portfolio__name {

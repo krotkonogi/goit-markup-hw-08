@@ -28,8 +28,8 @@
 }
 
 .orders__button {
-  background-color: var(--box-bg-color);
-  color: var(--text-color-main);
+  background-color: var(--highlight-color);
+  color: var(--main-background-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -40,11 +40,6 @@
   border-style: none;
   margin-bottom: 200px;
   &:hover {
-    background-color: var(--highlight-color);
-    color: var(--main-background-color);
     cursor: pointer;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: background-color color cursor;
   }
 }

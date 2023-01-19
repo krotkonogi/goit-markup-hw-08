@@ -7,8 +7,11 @@
     height: 4px;
     border-radius: 4px;
     background-color: var(--highlight-color);
-    bottom: -33px;
+    bottom: -32px;
     left: 0;
+  }
+  &:after .navigation__link {
+    color: var(--highlight-color);
   }
 }
 
@@ -21,7 +24,7 @@
     height: 4px;
     border-radius: 4px;
     background-color: var(--highlight-color);
-    bottom: -33px;
+    bottom: -32px;
     left: 0;
   }
 }

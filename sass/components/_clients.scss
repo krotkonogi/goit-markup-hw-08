@@ -4,6 +4,7 @@
   & svg:hover {
     outline: 1px solid var(--highlight-color);
     fill: var(--highlight-color);
+    cursor: pointer;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: outline;
@@ -11,6 +12,7 @@
   & svg:focus {
     outline: 1px solid var(--highlight-color);
     fill: var(--highlight-color);
+    cursor: pointer;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: outline;
