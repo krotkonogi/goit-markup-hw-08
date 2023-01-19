@@ -1,3 +1,15 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--top-bg-color);
+  color: var(--text-color-main);
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+
 .section-title {
   font-style: normal;
   font-weight: 700;
