@@ -4,8 +4,10 @@
   align-items: center;
   padding-bottom: 27px;
 
-  &__item:not(:last-child) {
-    margin-right: 10px;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 
   &__icon {
@@ -17,7 +19,7 @@
     border-radius: 50%;
     cursor: pointer;
 
-    &:hover {
+    &:focus {
       background-color: var(--highlight-color);
       fill: var(--top-bg-color);
       transition-duration: 250ms;
@@ -25,7 +27,7 @@
       transition-property: backfround-color fill;
     }
 
-    &:focus {
+    &:hover {
       background-color: var(--highlight-color);
       fill: var(--top-bg-color);
       transition-duration: 250ms;

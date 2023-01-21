@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
 body {
   background-color: var(--top-bg-color);
   color: var(--text-color-main);

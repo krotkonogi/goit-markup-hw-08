@@ -2,28 +2,30 @@
   text-align: center;
   padding-bottom: 94px;
 
-  & svg:hover {
-    outline: 1px solid var(--highlight-color);
-    fill: var(--highlight-color);
-    cursor: pointer;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: outline;
-  }
-
-  & svg:focus {
-    outline: 1px solid var(--highlight-color);
-    fill: var(--highlight-color);
-    cursor: pointer;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: outline;
-  }
-
   &__icon {
     fill: #afb1b8;
     border-radius: 4px;
     outline: 1px solid #afb1b8;
+
+    &:focus {
+      outline: 1px solid var(--highlight-color);
+      border-radius: 4px;
+      fill: var(--highlight-color);
+      cursor: pointer;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: outline;
+    }
+
+    &:hover {
+      outline: 1px solid var(--highlight-color);
+      border-radius: 4px;
+      fill: var(--highlight-color);
+      cursor: pointer;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: outline;
+    }
   }
 
   &__cards {
