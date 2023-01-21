@@ -59,7 +59,7 @@
       background-color: var(--highlight-color);
       color: var(--highlight-color);
       transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-timing-function: var(--transition-timing);
       transition-property: fill color;
     }
 
@@ -68,7 +68,7 @@
       color: var(--highlight-color);
       outline: none;
       transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-timing-function: var(--transition-timing);
       transition-property: fill color;
     }
   }
