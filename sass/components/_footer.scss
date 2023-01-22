@@ -23,6 +23,12 @@
     margin-right: 70px;
   }
 
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__links-title {
     font-weight: 700;
     font-size: 14px;
@@ -39,7 +45,10 @@
 
   &__icons {
     display: flex;
-    margin-right: 70px;
+
+    @include desktop {
+      margin-right: 70px;
+    }
 
     & li:not(:last-child) {
       margin-right: 10px;
@@ -75,7 +84,22 @@
 
   &__flex {
     display: flex;
-    width: 1170px;
+    max-width: 767px;
     margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include desktop {
+    &__links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__flex {
+      max-width: 1200px;
+      flex-direction: unset;
+      align-items: flex-start;
+    }
   }
 }

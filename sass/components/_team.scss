@@ -1,11 +1,28 @@
 .team {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 
   &__leaflets {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   & .leaflet:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    padding-bottom: 94px;
+
+    &__leaflets {
+      flex-direction: row;
+      display: flex;
+      justify-content: center;
+    }
+
+    & .leaflet:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
   }
 }

@@ -1,4 +1,7 @@
 .portfolio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding: 100px 0;
 
   &--overlay {
@@ -7,10 +10,10 @@
   }
 
   &__grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 30px;
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    grid-template-rows: 404px 404px 404px;
+    gap: 30px;
   }
 
   &__box {

@@ -1,31 +1,34 @@
 .navigation {
-  display: flex;
-  width: 670px;
-  padding: 31px 0;
-  align-items: center;
+  display: none;
+  @include desktop {
+    display: flex;
+    width: 670px;
+    padding: 31 px 0;
+    align-items: center;
 
-  &__link {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--text-color-main);
+    &__link {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      color: var(--text-color-main);
 
-    &:hover {
-      color: var(--highlight-color);
-      transition-duration: 250ms;
-      transition-timing-function: var(--transition-timing);
-      transition-property: color;
-    }
+      &:hover {
+        color: var(--highlight-color);
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing);
+        transition-property: color;
+      }
 
-    &:focus {
-      color: var(--highlight-color);
-      transition-duration: 250ms;
-      transition-timing-function: var(--transition-timing);
-      transition-property: color;
-    }
-    &--active {
-      color: var(--highlight-color);
+      &:focus {
+        color: var(--highlight-color);
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing);
+        transition-property: color;
+      }
+      &--active {
+        color: var(--highlight-color);
+      }
     }
   }
 

@@ -1,11 +1,22 @@
 .clients {
-  text-align: center;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__cards {
+    display: grid;
+    grid-template-rows: 92px 92px 92px;
+    grid-template-columns: 210px 210px;
+    grid-gap: 30px;
+  }
 
   &__icon {
     fill: #afb1b8;
     border-radius: 4px;
     outline: 1px solid #afb1b8;
+    width: 210px;
+    height: 92px;
 
     &:focus {
       outline: 1px solid var(--highlight-color);
@@ -28,15 +39,42 @@
     }
   }
 
-  &__cards {
-    display: flex;
-    padding-left: 0;
-    justify-content: center;
-  }
+  @include desktop {
+    display: block;
+    padding-bottom: 94px;
 
-  &__item {
-    &:not(:last-child) {
-      margin-right: 30px;
+    &__icon {
+      fill: #afb1b8;
+      border-radius: 4px;
+      outline: 1px solid #afb1b8;
+      width: 170px;
+      height: 92px;
+
+      &:focus {
+        outline: 1px solid var(--highlight-color);
+        border-radius: 4px;
+        fill: var(--highlight-color);
+        cursor: pointer;
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing);
+        transition-property: outline;
+      }
+
+      &:hover {
+        outline: 1px solid var(--highlight-color);
+        border-radius: 4px;
+        fill: var(--highlight-color);
+        cursor: pointer;
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing);
+        transition-property: outline;
+      }
+    }
+
+    &__cards {
+      display: flex;
+      padding-left: 0;
+      justify-content: center;
     }
   }
 }

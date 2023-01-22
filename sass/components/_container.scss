@@ -1,14 +1,7 @@
 .container {
-  width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-  @include tablet {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  @include phone {
-    max-width: 767;
+  max-width: 767px;
+  @include desktop {
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
   }

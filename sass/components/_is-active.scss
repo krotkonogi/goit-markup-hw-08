@@ -8,7 +8,13 @@
     height: 4px;
     border-radius: 4px;
     background-color: var(--highlight-color);
-    bottom: -32px;
+    bottom: -21px;
     left: 0;
+  }
+
+  @include desktop {
+    &:after {
+      bottom: -31px;
+    }
   }
 }

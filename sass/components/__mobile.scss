@@ -1,23 +1,23 @@
-.mobile-menu__email {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  & .link {
+.mobile {
+  &__email {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  &__item {
     display: block;
     padding: 10px;
     color: #fff;
     text-decoration: none;
-    &__item {
-      list-style-type: none;
-      font-size: 40px;
-      font-weight: 500;
-      display: block;
-      margin-bottom: 32px;
-      text-decoration: none;
-      color: var(--main-black);
-      &--color {
-        color: var(--main-blue);
-      }
+    list-style-type: none;
+    font-size: 40px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 32px;
+    text-decoration: none;
+    color: var(--main-black);
+    &--color {
+      color: var(--main-blue);
     }
   }
   &__tel {

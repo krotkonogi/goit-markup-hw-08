@@ -1,21 +1,24 @@
 .contact {
-  display: flex;
-
-  &__item {
+  display: none;
+  @include desktop {
     display: flex;
-    align-items: center;
 
-    &:hover svg,
-    &:hover a {
-      color: var(--highlight-color);
-      fill: var(--highlight-color);
-      transition-duration: 250ms;
-      transition-timing-function: var(--transition-timing);
-      transition-property: fill color;
+    &__item {
+      display: flex;
+      align-items: center;
+
+      &:hover svg,
+      &:hover a {
+        color: var(--highlight-color);
+        fill: var(--highlight-color);
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing);
+        transition-property: fill color;
+      }
     }
-  }
 
-  &--space {
-    margin-right: 46px;
+    &--space {
+      margin-right: 46px;
+    }
   }
 }
