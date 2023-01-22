@@ -3,11 +3,7 @@
   <head>
     <title>WebStudio</title>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
-    />
-    <link rel="stylesheet" href="css/main.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,8 +35,8 @@
             <li class="navigation__item"><a class="navigation__link" href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="menu-toggle--icon" width="40" height="40">
+        <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu__toggle--icon" width="40" height="40">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
@@ -165,19 +161,32 @@
               alt="Implementation of algorithms"
               width="370"
               height="294"
+              srcset="./images/image2-Desktop@2.jpg 2x"
             />
           </li>
           <li class="skills__item">
             <div class="skills__background">
               <a href="#" class="skills__info">APLIKACJE MOBILNE</a>
             </div>
-            <img src="./images/image(1).jpg" alt="Mobile applications" width="370" height="294" />
+            <img
+              src="./images/image(1).jpg"
+              alt="Mobile applications"
+              width="370"
+              height="294"
+              srcset="./images/image1-Desktop@2.jpg 2x"
+            />
           </li>
           <li class="skills__item">
             <div class="skills__background">
               <a href="#" class="skills__info">APLIKACJE MOBILNE</a>
             </div>
-            <img src="./images/image(3).jpg" alt="Application styling" width="370" height="294" />
+            <img
+              src="./images/image(3).jpg"
+              alt="Application styling"
+              width="370"
+              height="294"
+              srcset="./images/image3-Desktop@2.jpg 2x"
+            />
           </li>
         </ul>
       </section>
@@ -192,6 +201,13 @@
                   alt="John Doe Product Desinger"
                   width="270"
                   height="260"
+                  srcset="
+                    ./images/image4-Tablet@1.jpg 354w,
+                    ./images/image4-Phone@1.jpg  450w,
+                    ./images/image4-Tablet@2.jpg 708w,
+                    ./images/image4-Phone@2.jpg  900w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width:450px) 480px, vw"
                 />
                 <figcaption class="leaflet__box">
                   <h3 class="leaflet__name">John Doe</h3>
@@ -252,6 +268,13 @@
                   alt="John Doe Frontend Developer"
                   width="270"
                   height="260"
+                  srcset="
+                    ./images/image5-Tablet@1.jpg 354w,
+                    ./images/image5-Phone@1.jpg  450w,
+                    ./images/image5-Tablet@2.jpg 708w,
+                    ./images/image5-Phone@2.jpg  900w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width:450px) 480px, vw"
                 />
                 <figcaption class="leaflet__box">
                   <h3 class="leaflet__name">John Doe</h3>
@@ -312,6 +335,13 @@
                   alt="John Doe Marketing"
                   width="270"
                   height="260"
+                  srcset="
+                    ./images/image6-Tablet@1.jpg 354w,
+                    ./images/image6-Phone@1.jpg  450w,
+                    ./images/image6-Tablet@2.jpg 708w,
+                    ./images/image6-Phone@2.jpg  900w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width:450px) 480px, vw"
                 />
                 <figcaption class="leaflet__box">
                   <h3 class="leaflet__name">John Doe</h3>
@@ -372,6 +402,13 @@
                   alt="John Doe UI Designer"
                   width="270"
                   height="260"
+                  srcset="
+                    ./images/image7-Tablet@1.jpg 354w,
+                    ./images/image7-Phone@1.jpg  450w,
+                    ./images/image7-Tablet@2.jpg 708w,
+                    ./images/image7-Phone@2.jpg  900w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width:450px) 480px, vw"
                 />
                 <figcaption class="leaflet__box">
                   <h3 class="leaflet__name">John Doe</h3>
@@ -463,9 +500,15 @@
           </li>
         </ul>
       </section>
-      <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-          <svg fill="currentColor" viewBox="0 0 20 20" width="24" height="24">
+      <div class="menu__container js-menu-container" id="mobile-menu">
+        <button class="menu__toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
             <path
               fill-rule="evenodd"
               d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
