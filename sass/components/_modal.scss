@@ -1,6 +1,6 @@
 .modal {
-  width: 528px;
-  height: 580px;
+  width: 90%;
+  height: 98%;
   background: var(--top-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -17,6 +17,25 @@
   transform: scale(1);
   transition: transform 250ms var(--transition-timing), opacity 250ms var(--transition-timing);
 
+  @include desktop {
+    width: 528px;
+    height: 580px;
+    background: var(--top-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: scale(1);
+    transition: transform 250ms var(--transition-timing), opacity 250ms var(--transition-timing);
+  }
   &__button {
     display: flex;
     justify-content: center;

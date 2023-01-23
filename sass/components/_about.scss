@@ -51,6 +51,7 @@
     &__cards {
       display: flex;
       letter-spacing: 0.03em;
+      justify-content: center;
 
       & li:not(:last-child) {
         margin-right: 30px;
